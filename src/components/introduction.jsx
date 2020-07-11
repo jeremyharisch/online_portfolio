@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import data from '../mydata';
 
 export default class Introduction extends Component {
   render() {
@@ -12,11 +13,14 @@ export default class Introduction extends Component {
                   <li style={{backgroundImage: 'url(images/intro_pic_jeremy.jpeg)'}}>
                     <div className="overlay" />
                     <div className="color-overlay"></div>
+
                     <div className="row">
                       <div className="js-fullheight slider-text">
                         <div className="slider-text-inner js-fullheight">
-                          <h1> I'm Jeremy</h1>
+                          <h1>{data.headerTagline[0]}</h1>
+                          <h2>{data.headerTagline[1]}</h2>
                         </div>
+
                       </div>
                     </div>
                   </li>

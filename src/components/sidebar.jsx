@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import data from '../mydata';
 
 export default class Sidebar extends Component {
   render() {
@@ -10,8 +11,8 @@ export default class Sidebar extends Component {
 
             <div className="text-center">
               <div className="author-img" style={{backgroundImage: 'url(logos/JH_main_logo_purple.png)'}} />
-              <h1 id="colorlib-logo"><a href="index.html">Jeremy Harisch</a></h1>
-              <span className="email"><i className="icon-mail"></i> jeremy@harisch.de</span>
+              <h1 id="colorlib-logo"><a href="index.html">{data.name}</a></h1>
+              <span className="email"><i className="icon-mail"></i> {data.contactEmail}</span>
             </div>
             <nav id="colorlib-main-menu" role="navigation" className="navbar">
               <div id="navbar" className="collapse">
@@ -24,10 +25,10 @@ export default class Sidebar extends Component {
             </nav>
             <nav id="colorlib-main-menu">
               <ul>
-                <li><a href="https://www.linkedin.com/in/jeremy-harisch-099499170/" target="_blank" rel="noopener noreferrer"><i className="icon-linkedin2" /></a></li>
-                <li><a href="https://github.com/JeremyHarisch" target="_blank" rel="noopener noreferrer"><i className="icon-github"></i></a></li>
-                <li><a href="https://www.facebook.com/jeremy.harisch" target="_blank" rel="noopener noreferrer"><i className="icon-facebook22" /></a></li>
-                <li><a href="https://www.instagram.com/alazka_empty_throne/" target="_blank" rel="noopener noreferrer"><i className="icon-instagram" /></a></li>
+                <li><a href={data.social[1].url} target="_blank" rel="noopener noreferrer"><i className="icon-linkedin2" /></a></li>
+                <li><a href={data.social[0].url} target="_blank" rel="noopener noreferrer"><i className="icon-github"></i></a></li>
+                <li><a href={data.social[2].url} target="_blank" rel="noopener noreferrer"><i className="icon-facebook22" /></a></li>
+                <li><a href={data.social[3].url} target="_blank" rel="noopener noreferrer"><i className="icon-instagram" /></a></li>
               </ul>
             </nav>
             <div className="colorlib-footer">
