@@ -5,7 +5,7 @@ export default
         headerTagline: [//Line 1 For Header
                         'Hi 👾 You found me! I am Jeremy',
                         //Line 2 For Header
-                        'On this web-page you can learn some stuff about myself...hopefully',
+                        'This webpage is still in progress - More information about me and my projects coming soon! Please check out my social links on the left 😊',
     ],
         //Contact Email
         contactEmail:'jeremy@harisch.de',

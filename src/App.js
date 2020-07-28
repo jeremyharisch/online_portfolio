@@ -26,8 +26,6 @@ function App() {
           <div id="colorlib-main">
 
             <Introduction></Introduction>
-            <About></About>
-            <Timeline></Timeline>
 
           </div>
         </div>
