@@ -316,6 +316,8 @@ figure {
             #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
               font-size: 28px; } }
         #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
+          border-radius: 20px;
+          background: rgba(159, 25, 252, 1.0);
           font-size: 18px;
           line-height: 1.5;
           color: #ffffff;
