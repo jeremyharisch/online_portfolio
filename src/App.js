@@ -1,24 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {  } from 'react';
 import './App.css';
+import Sidebar from './components/sidebar'
+import Introduction from './components/introduction'
+import Timeline from './components/timeline'
+import About from "./components/about";
 
 function App() {
+
+
+  const [index, setIndex] = React.useState(0);
+
+  React.useEffect(() => {
+    const intervalId = setInterval(() =>
+            setIndex(index => index + 1),
+        3000 // every 3 seconds
+    );
+  });
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div id="colorlib-page">
+        <div id="container-wrap">
+          <Sidebar></Sidebar>
+
+          <div id="colorlib-main">
+
+            <Introduction></Introduction>
+            <About></About>
+            <Timeline></Timeline>
+
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
