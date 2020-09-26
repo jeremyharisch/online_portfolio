@@ -4,9 +4,11 @@ import data from '../mydata';
 export default class About extends Component {
     render() {
         return (
-            <div className="child">
+            <div id="child">
+                <div className="intro-box">
+                    <h1>HBal</h1>
+                </div>
 
-                <div></div>
             </div>
         )
     }

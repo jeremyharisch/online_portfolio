@@ -1,6 +1,90 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.scroll-down {
+    position: sticky;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.mouse {
+    width: 1.25rem;
+    height: 2.5rem;
+    border: 1px solid #ffffff;
+    border-radius: 1rem;
+    margin-bottom: .25rem;
+
+    display: flex;
+}
+
+.mouse span {
+    width: .5rem;
+    height: .5rem;
+    background-color: #ffffff;
+    display: block;
+    border-radius: 50%;
+    margin: auto;
+    animation: move-wheel 1s linear infinite;
+}
+
+.arrow span {
+    display: block;
+    width: .5rem;
+    height: .5rem;
+    border: 1px solid transparent;
+    border-right-color: #ffffff;
+    border-bottom-color: #ffffff;
+    transform: rotate(45deg);
+    animation: arrow-down 1s alternate infinite;
+}
+
+@keyframes move-wheel {
+    0%{
+        opacity: 0;
+        transform: translateY(-.5rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(.5rem);
+    }
+
+}
+
+@keyframes arrow-down {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: .25;
+    }
+    50%{
+        opacity: .5;
+    }
+    75%{
+        opacity: 0.75;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+
+.wrapper {
+    /*background-image: url(../public/images/sidebar_mountain.jpeg);*/
+}
+
 #outter {
     width: 100vw;
-    height: 300px;
+    height: 100vh;
     position: relative;
 }
 
@@ -10,6 +94,7 @@
     max-width: 50%;
     height: auto;
 }
+
 .bg-image {
     width: 100vw;
     height: 100vh;
@@ -18,9 +103,11 @@
 }
 
 #child{
-    float: left;
-    margin-left: 200px;
-    position: relative;
+    float: right;
+    /*margin-left: 200px;*/
+    /*position: fixed;*/
+    height: 100vh;
+    width: 100vw;
 }
 
 #contentOutter {
@@ -32,9 +119,7 @@
     width: 900px;
 }
 
-.wrapper {
-    background-image: url(../public/images/sidebar_mountain.jpeg);
-}
+
 p.wrapper{
     position: relative;
 }
@@ -81,22 +166,19 @@ ul.sidebar {
 }
 
 div.intro-box {
-    /*
-    background-color: #ffffff;
-    float: right;
-    margin: 100px;
-    border-left: 90vw;
-    width: 100px;*/
 
     background: #e7eef1;
     padding: 40px 40px 60px;
     box-sizing: border-box;
     border-radius: 2px;
-    box-shadow: 0 12px 0 -6px #fa90a3;
+    box-shadow: 0 12px 0 -6px #f6a1a1;
 
-    position: fixed;
-    right: 5%;
-    width: 36%;
+    position: relative;
+    right: 20%;
+    top: 35vh;
+
+    width: 50vw;
+    height: 150px;
     float: right;
 }
 
