@@ -2,7 +2,9 @@ import React from 'react';
 
 import Sidebar from './components/sidebar'
 import Introduction from "./components/introduction";
-import About from "./components/about";
+import Projects from "./components/projects";
+import Placeholder from "./components/placeholder";
+import Timeline from "./components/timeline";
 
 import './css/style.css'
 
@@ -18,7 +20,9 @@ function App() {
               <div id="contentOutter">
                   <Sidebar></Sidebar>
                   <Introduction></Introduction>
-                  <About></About>
+                  <Projects></Projects>
+                  <Placeholder></Placeholder>
+                  <Timeline></Timeline>
               </div>
           </div>
 

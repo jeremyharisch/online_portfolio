@@ -1,3 +1,11 @@
+:root {
+    --sidebar-space: 300px;
+    --page-content-width: calc(100vw - var(--sidebar-space));
+
+    --main-color: rgba(0, 255, 225, 0.5);
+}
+
+
 {
     margin: 0;
     padding: 0;
@@ -5,8 +13,49 @@
 }
 
 
+.flat-ui-colors .label-default {
+    background-color: #95a5a6;
+}
+.flat-ui-colors .label-default[href]:hover,
+.flat-ui-colors .label-default[href]:focus {
+    background-color: #7f8c8d;
+}
+.flat-ui-colors .label-primary {
+    background-color: rgb(1, 152, 152);
+}
+.flat-ui-colors .label-primary[href]:hover,
+.flat-ui-colors .label-primary[href]:focus {
+    background-color: rgb(4, 103, 103);
+}
+
+/* Vertical Time Line*/
+/* CUSTOM LINE COLOR */
+/* The line */
+.vertical-timeline.vertical-timeline::before {
+    background: rgb(181, 181, 181);
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+    border: 2rem;
+}
+
+.vertical-timeline-element-date {
+    color: rgb(0, 0, 0);
+    padding: 40px 40px 60px;
+    box-sizing: border-box;
+    border-radius: 0.8rem;
+
+}
+
+/* Icon container's border */
+.vertical-timeline.vertical-timeline-custom-line .vertical-timeline-element--work .vertical-timeline-element-icon {
+    box-shadow: 0 0 0 4px #1976d2, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.vertical-timeline.vertical-timeline-custom-line .vertical-timeline-element--education .vertical-timeline-element-icon {
+    box-shadow: 0 0 0 4px #c2185b, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
 .scroll-down {
-    position: sticky;
+    position: absolute;
     top: 90%;
     left: 50%;
     transform: translate(-50%);
@@ -50,11 +99,11 @@
 @keyframes move-wheel {
     0%{
         opacity: 0;
-        transform: translateY(-.5rem);
+        transform: translateY(.5rem);
     }
     100%{
         opacity: 1;
-        transform: translateY(.5rem);
+        transform: translateY(-.5rem);
     }
 
 }
@@ -104,9 +153,7 @@
 
 #child{
     float: right;
-    /*margin-left: 200px;*/
-    /*position: fixed;*/
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
 }
 
@@ -135,14 +182,16 @@ ul.sidebar {
 .sidebar {
     margin: 0;
     padding: 0;
-    width: 200px;
-    background-color: rgba(0, 255, 225, 0.5);
+    width: var(--sidebar-space);
+    background-color: var(--main-color);
     position: fixed;
     height: 100%;
     overflow: auto;
     /*background-image: url(../public/images/sidebar_mountain.jpeg);*/
     text-align: center;
     float: left;
+    box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
 
 }
 
@@ -165,13 +214,13 @@ ul.sidebar {
     transform: scale(1.5);
 }
 
-div.intro-box {
+div.intro_box {
 
     background: #e7eef1;
     padding: 40px 40px 60px;
     box-sizing: border-box;
     border-radius: 2px;
-    box-shadow: 0 12px 0 -6px #f6a1a1;
+    box-shadow: 0 12px 0 -6px var(--main-color);
 
     position: relative;
     right: 20%;
@@ -182,6 +231,90 @@ div.intro-box {
     float: right;
 }
 
+div.chapter_box {
+    background: #ffffff;
+    padding: 40px 40px 60px;
+    box-sizing: border-box;
+}
+
+.project {
+    background-color: #ffffff;
+    padding: 40px 40px 60px;
+    box-sizing: border-box;
+    width: 36rem;
+    height: 55rem;
+    position: relative;
+    display: inline-block;
+    margin: 3rem 1rem;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+}
+
+div.project h2 {
+    text-align: center;
+}
+
+div.project h4 {
+    text-align: center;
+}
+
+span.project_src {
+    display: inline-block;
+    margin: 0.3rem 0.2rem;
+}
+
+span.project_link {
+    margin: 0.3rem 0.2rem;
+    display: block;
+}
+
+div.project_link {
+    text-align: center;
+}
+
+
+/* Links on mouse-over */
+.project:hover:not(.active) {
+    transform: scale(1.006);
+}
+
+div.intro_chapter {
+    box-sizing: content-box;
+
+    position: relative;
+    width: var(--page-content-width);
+    min-height: 100vh;
+    left: var(--sidebar-space);
+}
+
+div.chapter {
+    background: #ffffff;
+    background-color: #ffffff;
+    box-sizing: content-box;
+
+    position: relative;
+    width: var(--page-content-width);
+    min-height: 100vh;
+    left: var(--sidebar-space);
+}
+
+.chapter h1 {
+    text-align: center;
+}
+
+.chapter_box {
+}
+
+div.place_holder {
+    box-sizing: content-box;
+
+    position: relative;
+    width: var(--page-content-width);
+    height: 1.5rem;
+
+    float: right;
+    backdrop-filter: blur(6px);
+}
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.content {
@@ -193,7 +326,7 @@ div.content {
 
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 840px) {
 
     #child{
         float: left;
@@ -208,7 +341,9 @@ div.content {
     .sidebar {
         width: 100vw;
         height: auto;
-        position: relative;
+        position: fixed;
+        z-index: 1000;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
     }
     .sidebar a {float: left;}
     div.content {margin-left: 0;}
@@ -225,5 +360,7 @@ div.content {
     .sidebar a {
         text-align: center;
         float: none;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
     }
 }
+

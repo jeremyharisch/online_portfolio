@@ -7,10 +7,15 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "react": "^16.13.1",
+    "react-chrono": "^1.0.26",
     "react-dom": "^16.13.1",
+    "react-fade-in": "^1.1.0",
     "react-icons": "^3.11.0",
     "react-pro-sidebar": "^0.4.4",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "react-scroll": "^1.8.1",
+    "react-spring": "^8.0.27",
+    "react-vertical-timeline-component": "^3.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
