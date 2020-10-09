@@ -5,10 +5,12 @@ import Introduction from "./components/introduction";
 import Projects from "./components/projects";
 import Placeholder from "./components/placeholder";
 import Timeline from "./components/timeline";
+import Skills from "./components/skills";
 
 import './css/style.css'
 
 import image from './public/images/intro_pic_jeremy.jpeg'
+
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
                   <Sidebar></Sidebar>
                   <Introduction></Introduction>
                   <Projects></Projects>
+                  <Placeholder></Placeholder>
+                  <Skills></Skills>
                   <Placeholder></Placeholder>
                   <Timeline></Timeline>
               </div>

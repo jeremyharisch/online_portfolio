@@ -217,7 +217,7 @@ ul.sidebar {
 div.intro_box {
 
     background: #e7eef1;
-    padding: 40px 40px 60px;
+    padding: 0.1rem 2rem;
     box-sizing: border-box;
     border-radius: 2px;
     box-shadow: 0 12px 0 -6px var(--main-color);
@@ -229,6 +229,8 @@ div.intro_box {
     width: 50vw;
     height: 150px;
     float: right;
+
+    text-align: left;
 }
 
 div.chapter_box {
@@ -237,7 +239,7 @@ div.chapter_box {
     box-sizing: border-box;
 }
 
-.project {
+div.project {
     background-color: #ffffff;
     padding: 40px 40px 60px;
     box-sizing: border-box;
@@ -248,6 +250,17 @@ div.chapter_box {
     margin: 3rem 1rem;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
     border-radius: 1rem;
+}
+
+div.project_box {
+    text-align: center;
+}
+
+p.project_header {
+    alignment: center;
+    text-align: center;
+    color: #4a4a4a;
+    font-size: 1.75rem;
 }
 
 div.project h2 {
@@ -263,9 +276,9 @@ span.project_src {
     margin: 0.3rem 0.2rem;
 }
 
-span.project_link {
+a.project_link {
+    display: inline-block;
     margin: 0.3rem 0.2rem;
-    display: block;
 }
 
 div.project_link {
