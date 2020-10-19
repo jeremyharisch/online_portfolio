@@ -12,8 +12,8 @@ export default class Introduction extends Component {
                 <div className="intro_chapter">
                     <div className="intro_box">
                         <FadeIn>
-                            <h1>My Name is Jeremy!</h1>
-                            <h1>And I´m a developer</h1>
+                            <h1 className="intro_header">MY NAME IS <span className="intro_header_name">JEREMY</span></h1>
+                            <h2 className="intro_header">And I´m a developer</h2>
 
                         </FadeIn>
                     </div>
