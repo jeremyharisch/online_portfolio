@@ -3,6 +3,7 @@
     --page-content-width: calc(100vw - var(--sidebar-space));
 
     --main-color: rgba(0, 255, 225, 0.5);
+    --main-color_flat: rgba(6, 146, 146, 0.9);
 }
 
 
@@ -263,7 +264,7 @@ div.project {
     box-sizing: border-box;
     width: 36rem;
     height: 55rem;
-    position: relative;
+    position: sticky;
     display: inline-block;
     margin: 3rem 1rem;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
@@ -280,6 +281,10 @@ p.project_header {
     text-align: center;
     color: #4a4a4a;
     font-size: 1.75rem;
+}
+
+p.project_description {
+    text-align: justify;
 }
 
 div.project h2 {
@@ -302,6 +307,9 @@ a.project_link {
 
 div.project_link {
     text-align: center;
+}
+
+project_links_group {
 }
 
 
@@ -327,7 +335,7 @@ h1.intro_header {
 }
 
 span.intro_header_name {
-    color: #00b3ee;
+    color: var(--main-color_flat);
     font-weight: bold;
 }
 
