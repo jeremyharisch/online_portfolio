@@ -7,7 +7,7 @@ import { SiLinkedin } from "react-icons/si";
 import { FaFacebookSquare } from "react-icons/fa";
 import { ImInstagram } from "react-icons/im";
 
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
 import logo from '../public/logos/JH_main_logo_grey.png'
 
 
@@ -21,7 +21,7 @@ export default class Sidebar extends Component {
                     <div className="sidebar_logo"><img className="sidebar_logo" src={logo} /></div>
                     <li><a  href="#">Home</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
+                    {/*<li><a href="#skills">Skills</a></li>*/}
                     <li><a href="#timeline">Timeline</a></li>
                     <li><a href={data.social[1].url} target="_blank" rel="noopener noreferrer"><SiLinkedin/></a></li>
                     <li><a href={data.social[0].url} target="_blank" rel="noopener noreferrer"><GoMarkGithub/></a></li>

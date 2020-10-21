@@ -24,7 +24,8 @@ function App() {
                   <Introduction></Introduction>
                   <Projects></Projects>
                   <Placeholder></Placeholder>
-                  
+                  {/*<Skills></Skills>
+                  <Placeholder></Placeholder>*/}
                   <Timeline></Timeline>
               </div>
           </div>
