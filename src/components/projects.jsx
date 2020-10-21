@@ -26,7 +26,7 @@ export default class Projects extends Component {
                                         <span className="label label-default project_src">CMake</span>
                                     </div>
                                     <div className="project_link flat-ui-colors">
-                                        <a className="label label-primary project_link" href="https://github.com/JeremyHarisch/IronMan-Experience" target="_blank">GitLab</a>
+                                        <a className="label label-primary project_link" href="https://gitlab.lrz.de/ga87tan/psemoldyn_groupc" target="_blank">GitLab</a>
                                         <a className="label label-primary project_link" href="https://gitlab.lrz.de/ga87tan/psemoldyn_groupc/-/blob/master/README.md" target="_blank">Documentation</a>
                                     </div>
 
@@ -61,13 +61,20 @@ export default class Projects extends Component {
                                 <div className="project">
                                     <h2>Digit-Recognition</h2>
                                     <p className="project_header">Through Finger Movement</p>
-                                    <p className="project_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid in maiores. Animi assumenda
-                                        culpa delectus dignissimos, distinctio dolores ea eaque incidunt ipsam iste laboriosam porro,
-                                        quia sint tempore voluptatibus!</p>
+                                    <p className="project_description">
+                                        This project was the approach for facilitating the keyboard input on  smart watches,
+                                        which have a built in camera. This algorithm tracks the finger tip, until now
+                                        with the help of a green marker, saves the track ,and maps the in the air written number to a digital number
+                                        , using a small neural network.
+                                        This algorithm was implemented with Keras and OpenCV.
+                                        Future-work would to be to include the latin alphabet and track the finger tip without
+                                        using a green marker as a helper. Furthermore, the accuracy needs to be improved, until now it is ca. 92.12%.
+                                    </p>
                                     <div className="project_links_group>">
                                         <div className="project_link">
                                             <span className="label label-default project_src">Python</span>
                                             <span className="label label-default project_src">Keras</span>
+                                            <span className="label label-default project_src">OpenCV</span>
                                         </div>
                                         <div className="project_link flat-ui-colors">
                                             <a className="label label-primary project_link" href="https://github.com/JeremyHarisch/DigitRecognitionThroughFingerMovement" target="_blank">GitHub</a>
@@ -79,13 +86,20 @@ export default class Projects extends Component {
                                 <div className="project">
                                     <h2>IronMan-VR</h2>
                                     <p className="project_header">Virtual-Reality Game</p>
-                                    <p className="project_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid in maiores. Animi assumenda
-                                        culpa delectus dignissimos, distinctio dolores ea eaque incidunt ipsam iste laboriosam porro,
-                                        quia sint tempore voluptatibus!</p>
+                                    <p className="project_description">
+                                        This VR-game is a survival shooter - The user uses his/her own hands as blasters
+                                        like IronMan from the Marvel comics. Furthermore, the user can choose between different blasters,
+                                        by using specific hand gestures. The game was implemented with the Unity engine and their tutorial
+                                        third person shooter was used as a foundation.
+                                        All the graphics were made of Unity assets. To track the users hand a Leap-Motion sensor
+                                        has to be mounted in the front of the VR-googles. This game was tested with the
+                                        Oculus Rift S.
+                                    </p>
                                     <div className="project_links_group>">
                                         <div className="project_link">
                                             <span className="label label-default project_src">C#</span>
                                             <span className="label label-default project_src">Unity</span>
+                                            <span className="label label-default project_src">Leap Motion</span>
                                         </div>
                                         <div className="project_link flat-ui-colors">
                                             <a className="label label-primary project_link" href="https://github.com/JeremyHarisch/IronMan-Experience" target="_blank">GitHub</a>
