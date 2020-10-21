@@ -21,7 +21,7 @@ export default
             },
             {
                 name: 'LinkedIn',
-                url: "https://www.linkedin.com/in/jeremy-harisch-099499170/"
+                url: "www.linkedin.com/in/jeremy-harisch"
             },
             {
                 name: 'Facebook',
