@@ -48,6 +48,7 @@ export default class Timeline extends Component {
                                     processing point-clouds, analyzing captured frames, and more. Besides, I collaborate
                                     in the process of optimizing the verification-process for the Lidar-Scanners.
                                 </p>
+                                <h5>Used Technologies: Python, Google ProtocolBuffers, Git, GitLab, RedMine</h5>
                             </VerticalTimelineElement>
 
                             <VerticalTimelineElement
@@ -65,6 +66,7 @@ export default class Timeline extends Component {
                                     Additionally, I set up an Elastic-Search-Stack(ELK) to monitor the development process.
                                     Besides all this, I developed in-house applications using Java.
                                 </p>
+                                <h5>Used Technologies: Java, QF-Test, Groovy, Python, Git, Gerrit, Jira</h5>
                             </VerticalTimelineElement>
 
                             <VerticalTimelineElement
@@ -82,6 +84,7 @@ export default class Timeline extends Component {
                                     them to potential new customers using cold calling or visiting them personally. My second task
                                     was the administration of the in-house, as well as the customers, hardware-infrastructure.
                                 </p>
+                                <h5>Used Technologies: Diverse CRM Tools, Linux</h5>
                             </VerticalTimelineElement>
 
                             <VerticalTimelineElement
