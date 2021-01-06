@@ -103,7 +103,7 @@ export default class Projects extends Component {
                                         </div>
                                         <div className="project_link flat-ui-colors">
                                             <a className="label label-primary project_link" href="https://github.com/JeremyHarisch/IronMan-Experience" target="_blank">GitHub</a>
-                                            <a className="label label-primary project_link" href="#" target="_blank">Documentation</a>
+                                            <a className="label label-primary project_link" href="https://github.com/JeremyHarisch/IronMan-Experience/blob/master/IronMan_FinalReport.pdf" target="_blank">Documentation</a>
                                         </div>
                                     </div>
                                 </div>

@@ -18,17 +18,19 @@ export default class Timeline extends Component {
                         <VerticalTimeline>
                             <VerticalTimelineElement
                                 className="vertical-timeline-element--work"
-                                date="October 2020 - present"
+                                date="October 2020"
                                 contentStyle={{ background: 'rgb(98,98,98)', color: '#fff', boxShadow:'0px 2px 15px rgba(0, 0, 0, 0.5)' }}
                                 contentArrowStyle={{ borderRight: '7px solid  rgb(95, 95, 95)' }}
                                 iconStyle={{ background: 'rgb(5,203,203)', color: '#ffffff', boxShadow:'0px 2px 15px rgba(0, 0, 0, 0.5)' }}
                                 icon={<IoIosSchool/>}
                             >
-                                <h3 className="vertical-timeline-element-title">M.Sc. Informatics</h3>
+                                <h3 className="vertical-timeline-element-title">Finished B.Sc. Informatics</h3>
                                 <h4 className="vertical-timeline-element-subtitle"><a className="webpage-links" href={"https://www.tum.de/en/"} target="_blank" rel="noopener noreferrer">Technical University of Munich</a>, Germany</h4>
                                 <p style={{fontSize: "1.5rem"}}>
-                                    In my master studies, I want to focus mainly on data-/IT-security, as well as on
-                                    engineering software-intensive systems.
+                                    The most part of this studies was fixed by the university. The elective courses did not have any
+                                    focus on a specific topic. I tried myself if various subjects like machine learning,
+                                    blockchain or even computer-vision.
+                                    My bachelor's practical course and my final thesis then have been at the high-performance-computing chair.
                                 </p>
                             </VerticalTimelineElement>
 
