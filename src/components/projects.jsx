@@ -12,6 +12,23 @@ export default class Projects extends Component {
                             <h1>Projects</h1>
                             <div className="project_box">
                                 <div className="project">
+                                    <h2>Kyma</h2>
+                                    <p className="project_header">Open-Source Kubernertes Runtime</p>
+                                    <p className="project_description">I am collaborating on the open-source Kyma project during my employment at SAP. With Kyma, you can develop, run, and operate secure and scalable cloud-native applications by combining Kubernetes with a set of best-in-class tools and open-source components. I started with developing the observability stack of Kyma (including using other open-source software), but now I am involved in designing and developing the lifecycle management solution for Kyma using best practices of the cloud-native world.
+                                    </p>
+                                    <div className="project_link">
+                                        <span className="label label-default project_src">Go</span>
+                                        <span className="label label-default project_src">Prow</span>
+                                        <span className="label label-default project_src">Shell-Scripting</span>
+                                        <span className="label label-default project_src">...</span>
+                                    </div>
+                                    <div className="project_link flat-ui-colors">
+                                        <a className="label label-primary project_link" href="https://github.com/kyma-project" target="_blank">GitHub</a>
+                                        <a className="label label-primary project_link" href="https://kyma-project.io/docs/kyma/latest/" target="_blank">Documentation</a>
+                                    </div>
+
+                                </div>
+                                <div className="project">
                                     <h2>PSE-Project</h2>
                                     <p className="project_header">Bachelor's Practical Course</p>
                                     <p className="project_description">This project was done due to the practical course "Scientific Computing (PSE) Molecular Dynamics" at the TUM.
