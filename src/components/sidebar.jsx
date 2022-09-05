@@ -25,8 +25,6 @@ export default class Sidebar extends Component {
                     <li><a href="#timeline">Timeline</a></li>
                     <li><a href={data.social[1].url} target="_blank" rel="noopener noreferrer"><SiLinkedin/></a></li>
                     <li><a href={data.social[0].url} target="_blank" rel="noopener noreferrer"><GoMarkGithub/></a></li>
-                    <li><a href={data.social[2].url} target="_blank" rel="noopener noreferrer"><FaFacebookSquare/></a></li>
-                    <li><a href={data.social[3].url} target="_blank" rel="noopener noreferrer"><ImInstagram/></a></li>
                 </ul>
             </div>
         </div>
